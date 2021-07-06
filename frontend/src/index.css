@@ -2,9 +2,9 @@ main {
     min-height: 80vh;
 }
 
-ml-auto {
+/* ml-auto {
     margin-left: auto;
-}
+} */
 
 .navbar-nav {
     margin-left: auto;
