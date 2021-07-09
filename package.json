@@ -1,0 +1,23 @@
+{
+    "name": "e-shop",
+    "version": "1.0.0",
+    "description": "MERN Shopping cart app (E-Shop)",
+    "main": "server.js",
+    "scripts": {
+        "start": "node backend/server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pmg1601/E-shop.git"
+    },
+    "author": "Pratik",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pmg1601/E-shop/issues"
+    },
+    "homepage": "https://github.com/pmg1601/E-shop#readme",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "express": "^4.17.1"
+    }
+}

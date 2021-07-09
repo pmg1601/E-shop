@@ -2,10 +2,11 @@ main {
     min-height: 80vh;
 }
 
-/* ml-auto {
-    margin-left: auto;
-} */
-
 .navbar-nav {
     margin-left: auto;
+}
+
+.product-image {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px grey;
 }

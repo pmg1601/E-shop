@@ -1,23 +1,37 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
 import Rating from '../components/Rating'
-import products from '../products'
+import axios from 'axios'
 
 const ProductScreen = ({ match }) => {
-    const product = products.find((p) => p._id === match.params.id)
+    // const product = products.find((p) => p._id === match.params.id)
+    const [product, setProduct] = useState([])
+    useEffect(() => {
+        const fetchProduct = async () => {
+            const { data } = await axios.get(`/api/products/${match.params.id}`)
+            setProduct(data)
+        }
+
+        fetchProduct()
+    }, [])
 
     return (
         <>
-            <Link className='btn btn-dark my-3' to='/'>
+            <Link className='btn btn-dark my-4' to='/'>
                 Go Back
             </Link>
 
             <Row>
-                <Col md={6}>
-                    <Image src={product.image} alt={product.name} fluid></Image>
+                <Col lg={6}>
+                    <Image
+                        className='product-image mb-4'
+                        src={product.image}
+                        alt={product.name}
+                        fluid></Image>
                 </Col>
-                <Col md={3}>
+
+                <Col lg={3}>
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <h3>{product.name}</h3>
@@ -31,12 +45,12 @@ const ProductScreen = ({ match }) => {
 
                         <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
                         <ListGroup.Item>
-                            Description: ${product.description}
+                            Description: {product.description}
                         </ListGroup.Item>
                     </ListGroup>
                 </Col>
 
-                <Col md={3}>
+                <Col lg={3}>
                     <Card>
                         <ListGroup variant='flush'>
                             <ListGroup.Item>
@@ -62,7 +76,7 @@ const ProductScreen = ({ match }) => {
 
                             <ListGroup.Item>
                                 <Button
-                                    className='btn btn-block'
+                                    className='btn btn-block w-100'
                                     type='button'
                                     disabled={product.countInStock === 0}>
                                     Add To Cart

@@ -1,5 +1,5 @@
-`This is an E-commerce site which allows user to shop products, add items to the cart and checkout for the purchase.`
+# E-Shop
 
-> I have used HTML, JS, React, Bootswatch Lux Theme
+This is a `single page E-commerce website` that has functionality of purchase products in group or single product, products can be added to the cart.
 
-# Building This Project
+> I have used `MERN stack`, `react-bootstrap(bootswap)`
