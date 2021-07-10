@@ -5,7 +5,6 @@ import Rating from '../components/Rating'
 import axios from 'axios'
 
 const ProductScreen = ({ match }) => {
-    // const product = products.find((p) => p._id === match.params.id)
     const [product, setProduct] = useState([])
     useEffect(() => {
         const fetchProduct = async () => {
