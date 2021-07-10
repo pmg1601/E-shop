@@ -50,3 +50,6 @@
 > ## DataBase
 
 1. Used `MongoDB Atlas` - online service.
+2. Setup with `MongoDB Compass`
+3. Connect application with `mongoose`
+4.
