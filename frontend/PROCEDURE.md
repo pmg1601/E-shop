@@ -21,6 +21,8 @@
 3. Create components and import in "App.js"
 4. Use `Bootswatch LUX Theme` and import in index.js as `import './bootstrap.min.css'`
 
+<br>
+
 > ## Front-End
 
 1. Use `screens` as pages.
@@ -36,6 +38,15 @@
 
 5. In `index.js` App component is wrapped in `React.StrictMode` component.
 
+<br>
+
 > ## Back-End
 
 1. Use Express for creating API's.
+2. Use `.env` file to store `ENV_Variables`.
+3. Use ES6 conventions.
+4.
+
+> ## DataBase
+
+1. Used `MongoDB Atlas` - online service.
