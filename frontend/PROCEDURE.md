@@ -49,6 +49,7 @@
 3. Use ES6 conventions.
 4. Added `middleware` to handle errors.
 5. Added `routes` to get data from database.
+6. Added complete `Cart` functionality.
 
 > ## DataBase
 
