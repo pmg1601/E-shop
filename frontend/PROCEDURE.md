@@ -37,6 +37,8 @@
         - import { Container } from 'react-bootstrap'
 
 5. In `index.js` App component is wrapped in `React.StrictMode` component.
+6. Added `store` to deal with data and content
+7. Added `react-redux` for loader and error message for a page. We are fetching data through `actions` defined for reducers
 
 <br>
 
@@ -45,7 +47,8 @@
 1. Use Express for creating API's.
 2. Use `.env` file to store `ENV_Variables`.
 3. Use ES6 conventions.
-4.
+4. Added `middleware` to handle errors.
+5. Added `routes` to get data from database.
 
 > ## DataBase
 
@@ -55,3 +58,4 @@
 4. Create `models` for database collections.
 5. `Seeder` script to insert/delete data.
 6.
+7.

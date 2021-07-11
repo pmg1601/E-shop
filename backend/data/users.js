@@ -1,3 +1,5 @@
+// Users data with encrypted password
+
 import bcrypt from 'bcryptjs'
 
 const users = [

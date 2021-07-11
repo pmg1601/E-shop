@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 
+// Connect to the mongoDB database
 const connectDB = async () => {
     try {
         const conn = await mongoose.connect(process.env.MONGO_URI, {
@@ -15,4 +16,5 @@ const connectDB = async () => {
     }
 }
 
+// Return default 'connection' variable
 export default connectDB

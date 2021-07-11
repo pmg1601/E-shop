@@ -11,6 +11,7 @@ import connectDB from './config/db.js'
 dotenv.config()
 connectDB()
 
+// Import data from data files and clear previous data from the database
 const importData = async () => {
     try {
         await Order.deleteMany()
@@ -33,6 +34,7 @@ const importData = async () => {
     }
 }
 
+// Delete all data from database
 const destroyData = async () => {
     try {
         await Order.deleteMany()
